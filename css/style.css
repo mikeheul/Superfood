@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Finlandica"; */
     font-family: "Kantumruy Pro";
     scroll-behavior: smooth;
 }
@@ -98,6 +97,8 @@ p {
     font-weight: 300;
 }
 
+/** -------------------------------------- HEADER -------------------------------------- */
+
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -179,6 +180,8 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
+/** -------------------------------------- SECTION -------------------------------------- */
+
 section {
     padding: 90px 90px;
 }
@@ -217,6 +220,8 @@ section {
     text-align: left;
 }
 
+/** -------------------------------------- TEA POSITIVE -------------------------------------- */
+
 .tea-positive h2 {
     color: #3e3e3e;
     font-weight: 600;
@@ -247,6 +252,8 @@ section {
     margin: auto;
 }
 
+/** -------------------------------------- ARTICLES -------------------------------------- */
+
 .articles .row {
     display: flex;
     flex-wrap: wrap;
@@ -263,7 +270,6 @@ section {
     transition: .5s;
 }
 .article-item:hover {
-    /* transform: translateY(-15px); */
     transform: scale(1.05);
 }
 
@@ -295,12 +301,11 @@ section {
     transition: .5s;
 }
 
-
 .article-item-img:hover .overlay {
     opacity: 1;
 }
 .article-item-img:hover img {
-    filter: grayscale(1); /*blur(2px);*/
+    filter: grayscale(1);
 }
 .article-item-img .overlay .btn:hover{
     background: #fff;
@@ -321,7 +326,9 @@ section {
 .star {
     color: #036d80;
 }
-    
+
+/** -------------------------------------- LAYOUTS -------------------------------------- */
+
 .layouts {
     background: url("../img/tea-home-new-gray-2.jpg");
     background-position: left;
@@ -329,6 +336,8 @@ section {
     background-repeat: no-repeat;
 }
     
+/** -------------------------------------- STATS -------------------------------------- */
+
 .stats {        
     background-image: url("../img/tea-home-parallax.jpg");
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -351,12 +360,13 @@ section {
     font-size: 35px;
 }
 
+/** -------------------------------------- BUILDER -------------------------------------- */
+
 .builder .builder-text {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 40px;
-    /* width: 5px; */
 }
 
 .builder-item {
@@ -374,6 +384,8 @@ section {
     top: -280px;
 }
 
+/** -------------------------------------- PARTNERS -------------------------------------- */
+
 .partners {
     background: #6cc5bb;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -381,7 +393,6 @@ section {
 
 .partners .row {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -397,6 +408,8 @@ section {
     transform: translateY(-5px);
 }
 
+/** -------------------------------------- PORTFOLIO -------------------------------------- */
+
 .portfolio {
     background: url(../img/tea-home-new-gray-coffee-1.jpg);
     background-position: top;
@@ -406,6 +419,8 @@ section {
     font-size: 15px;
     color: #036d80
 }
+
+/** -------------------------------------- GALLERY -------------------------------------- */
 
 .gallery {
     padding: 0;
@@ -452,6 +467,8 @@ section {
     cursor: pointer;
 }
 
+/** -------------------------------------- FOOTER -------------------------------------- */
+
 footer {
     height: 100px;
     display: flex;
@@ -460,6 +477,8 @@ footer {
     background: #2b2b2b;
     color: #fff;
 }
+
+/** -------------------------------------- MEDIA QUERIES -------------------------------------- */
 
 @media(max-width:760px) {
 
