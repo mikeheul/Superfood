@@ -13,7 +13,7 @@
     <header class="parallax" id="header">
         <div class="header-nav">
             <div class="logo">
-                <img src="./img/new-logo.png" alt="">
+                <a href="#"><img src="./img/new-logo.png" alt=""></a>
             </div>
             <nav>
                 <ul>
@@ -110,7 +110,7 @@
                                 </div>
                             </div>
                             <div class="article-item-text">
-                                <h3>Flowering Tea</h3>
+                                <h3>Mockups</h3>
                                 <p>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                             <div class="article-item-text">
-                                <h3>Flowering Tea</h3>
+                                <h3>Fruit Tea</h3>
                                 <p>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
@@ -148,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="article-item-text">
-                                <h3>Flowering Tea</h3>
+                                <h3>Green Tea</h3>
                                 <p>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
@@ -167,7 +167,7 @@
                                 </div>
                             </div>
                             <div class="article-item-text">
-                                <h3>Flowering Tea</h3>
+                                <h3>Black Tea</h3>
                                 <p>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
@@ -186,7 +186,7 @@
                                 </div>
                             </div>
                             <div class="article-item-text">
-                                <h3>Flowering Tea</h3>
+                                <h3>Herbal Tea</h3>
                                 <p>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
@@ -205,7 +205,7 @@
                                 </div>
                             </div>
                             <div class="article-item-text">
-                                <h3>Flowering Tea</h3>
+                                <h3>Metal box Tea</h3>
                                 <p>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
@@ -224,7 +224,7 @@
                                 </div>
                             </div>
                             <div class="article-item-text">
-                                <h3>Flowering Tea</h3>
+                                <h3>Blueberry Tea</h3>
                                 <p>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
                                     <ion-icon class="star" name="star-outline"></ion-icon>
@@ -326,7 +326,7 @@
                 <div class="section-heading">
                     <h1>Choose Your Portfolio</h1>
                     <p>The Elated Slider comes with video and image support, as well as full screen and parallax functionality. Display your essential content in style. Add sections with the stunning parallax effect to your pages. Make browsing your website an exciting and intuitive experience.</p>
-                    <h5>Rickie Basso, Photographer</h5>
+                    <h5>- Rickie Basso, Photographer -</h5>
                 </div>
             </section>
 
@@ -378,5 +378,27 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {stickyNav()};
+
+        // Get the navbar
+        var navbar = document.querySelector(".header-nav");
+        var logo = document.querySelector(".logo img");
+
+        // Get the offset position of the navbar
+        var sticky = 50;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function stickyNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+                logo.src = "../img/new-logo-black.png";
+            } else {
+                navbar.classList.remove("sticky");
+                logo.src = "../img/new-logo.png";
+            }
+        }
+    </script>
 </body>
 </html>

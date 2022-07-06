@@ -17,6 +17,10 @@
     text-transform: uppercase;
 }
 
+.btn:hover {
+    opacity: 0.8;
+}
+
 .stt {
     position: fixed;
     display: flex;
@@ -121,6 +125,26 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
 }
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.915);
+    transition: 0.5s;
+    color: #000;
+    z-index: 101;
+}
+
+.sticky ul li a {
+    color: #000;
+    z-index: 999;
+}
+
 
 .header-text {
     position: absolute;
@@ -266,7 +290,6 @@ section {
     transition: .5s;
 }
 
-
 .article-item-img:hover .overlay {
     opacity: 1;
 }
@@ -284,6 +307,9 @@ section {
 }
 .article-item-text h3 {
     padding: 10px;
+}
+.article-item-text .price {
+    margin-top: 10px;
 }
 
 .star {
@@ -308,6 +334,10 @@ section {
 }
 
 .stat-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #fff;
 }
@@ -318,8 +348,9 @@ section {
 .builder .builder-text {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 40px;
-    width: 5px;
+    /* width: 5px; */
 }
 
 .builder-item {
@@ -363,6 +394,11 @@ section {
 .portfolio {
     background: url(../img/tea-home-new-gray-coffee-1.jpg);
     background-position: top;
+}
+
+.portfolio .section-heading h5 {
+    font-size: 15px;
+    color: #036d80
 }
 
 .gallery {
@@ -421,8 +457,20 @@ footer {
 
 @media(max-width:760px) {
 
+    section {
+        padding: 90px 20px;
+    }
+
     .header-text h1 {
-        font-size: 10px;
+        font-size: 40px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav .header-nav {
+        flex-direction: column;
     }
 
     nav ul {
@@ -440,9 +488,10 @@ footer {
     .tea-positive .row .col-3{
         max-width: 100%;
         text-align: left;
+        gap: 20px;
     }
     .tea-positive .row .col-3 img {
-        display: none;  
+        transform: rotate(90deg); 
     }
 
     .gallery .row {
@@ -456,11 +505,11 @@ footer {
 
     .builder .row {
         flex-direction: column;
-        max-width: 100%;
     }
 
     .builder-item {
-        padding-left: 0;
+        width: 100%;
+        padding: 0;
     }
 
     .builder-text {
